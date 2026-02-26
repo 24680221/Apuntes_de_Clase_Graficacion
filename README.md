@@ -535,7 +535,7 @@ Desde el punto de vista matemático, el código integra:
 -	Organización espacial en el plano
 Este ejemplo demuestra cómo los fundamentos matemáticos de la graficación permiten construir estructuras complejas a partir de formas simples.
 
-La explicación completa del código y su funcionamiento detallado se encuentra disponible en el siguiente enlace:
+La explicación completa del código y su funcionamiento detallado se encuentra disponible en el siguiente enlace: https://github.com/24680221/flor_de_vida 
 
 
 1.6 Procesamiento de mapas de bits
