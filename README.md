@@ -634,3 +634,146 @@ Prezi, E. y. D. D. O. (s. f.). Representación y trazo de líneas y polígonos. 
 Client challenge. (s. f.-d). https://es.slideshare.net/slideshow/1-6-procesamiento-de-mapas-de-bits-en-graficacion/282295902
 
 
+# UNIDAD 2
+## GRAFICACION 2D
+
+La graficación 2D es una rama fundamental de la computación gráfica que se encarga de la representación, manipulación y transformación de objetos en un plano bidimensional (ejes X y Y).
+Se utiliza en:
+- Diseño gráfico
+- Videojuegos
+- Interfaces de usuario
+- Animación
+
+
+2.1 Transformaciones Bidimensionales
+-
+
+Las transformaciones bidimensionales son operaciones matemáticas que permiten modificar un objeto en el plano sin necesidad de redefinir completamente su geometría.
+
+Estas transformaciones se aplican sobre cada vértice del objeto.
+
+2.1.1. Traslación.
+-
+
+Se aplica una traslación en un objeto para cambiar su posición a lo largo de la trayectoria de una línea recta de una dirección de coordenadas a otra. Convertimos un punto bidimensional al agregar las distancias de traslación, tx y ty la posición de coordenadas original (x,y)
+
+El par de distancia de traslación se llama vector de traslación o vector de cambio. Se pueden expresar las ecuaciones anteriores en una sola ecuación matricial al utilizar vectores de columna para representar las posiciones de coordenadas y el vector de traslación
+
+Los polígonos se trasladan al sumar el vector de traslación a la posición decoordenadas de cada vértice y se vuelve a generar el polígono utilizando un nuevo conjuntode coordenadas y vértices y las especificaciones actuales de los atributos.
+
+
+2.1.2. Escalamiento.
+-
+
+La transformación de escalación altera el tamaño de un objeto. Se puede realizar esta operación para polígonos al multiplicar los valores de coordenadas (x, y) de cada vértice por los factores de escalación sx y sy para producir las coordenadas transformadas (x’, y’)
+
+Tipos de escalamiento
+
+- Uniforme
+  '''𝑆𝑥 = 𝑆𝑦'''
+
+Mantiene la proporción.
+
+- No uniforme
+'''𝑆𝑥 ≠ 𝑆𝑦'''
+
+Deforma el objeto.
+
+2.1.3. Rotación
+-
+
+Se aplica una rotación bidimensional en un objeto al cambiar su posición a lo largo de la trayectoria de una circunferencia en el plano de x,y. 
+
+Para generar una rotación, especificamos un ángulo de rotación θ y la posición (x r , y r ) del punto de rotación (o punto pivote) en torno al cual se gira el objeto.
+
+Características
+- Mantiene forma y tamaño
+- Solo cambia la orientación
+- Puede ser:
+   - Antihoraria (positiva)
+   - Horaria (negativa)
+
+2.1.4. Sesgado
+-
+
+El sesgado es un tipo de transformación no rígida, pues existe una deformación del objeto original al aplicar dicha transformación. Existen dos tipos de sesgo: sesgo horizontal y sesgo vertical. 
+
+- Sesgo horizontal: Las coordenadas adyacentes al eje x permanecen fijas, los valores de y no cambian.
+- Sesgo vertical: Las coordenadas adyacentes al eje y permanecen fijas, los valores de x no cambian.
+
+Características
+- No conserva ángulos
+- Cambia la forma del objeto
+- Se usa en efectos visuales y animación
+
+2.2. Representación matricial de las transformaciones bidimensionales.
+-
+
+Para simplificar las transformaciones se utilizan matrices.
+
+Coordenadas homogéneas
+-
+El uso de coordenadas homogéneas permite tratar todas las transformaciones geométricas como una multiplicación de matrices. Las coordenadas agregan un tercer componente a las coordenadas bidimensionales. De tal forma que, un punto (x,y) pasa a ser (x,y,W). El valor de W es generalmente 1. 
+
+Ventajas
+
+- Permiten representar todas las transformaciones con matrices
+- Facilitan combinar múltiples transformaciones
+
+Importancia en computación gráfica
+- Base de motores gráficos
+- Uso en OpenGL y Blender
+- Fundamental en animaciones
+
+Ejemplo practico
+-
+En el siguiente link, en el ejemplo de la flor  se aplica la representación matricial de las transformaciones bidimensionales mediante la manipulación de un objeto 2D dentro de Blender. A partir del dibujo de una flor elaborado con herramientas de graficación, se implementa un script en Python que permite controlar su posición en el plano mediante el uso del teclado.
+
+El código desarrollado utiliza operaciones de traslación sobre las coordenadas del objeto, modificando sus valores en los ejes X y Z, lo que equivale a aplicar transformaciones geométricas en tiempo real. Aunque estas transformaciones se realizan directamente sobre las coordenadas, conceptualmente corresponden a la aplicación de matrices de transformación en coordenadas homogéneas.
+
+De esta manera, se integra la teoría de las transformaciones bidimensionales con su aplicación práctica en un entorno gráfico, permitiendo comprender cómo los objetos pueden ser manipulados dinámicamente dentro de un sistema de coordenadas.
+
+link: https://github.com/24680221/Movimientoconflechas/blob/main/README.md
+
+2.3 Trazo de Líneas Curvas
+-
+
+2.3.1. Bézier.
+-
+Destacamos este elemento de dibujo de Inkscape ya que las herramientas de dibujo libre que incorporan la mayoría de programas vectoriales se basan en este concepto para el trazado de líneas curvas.
+
+Este tipo de curvas fue desarrollado por Pierre Bézier por encargo de la empresa de automóviles Renault que buscaba una representación matemática para definir las transiciones suaves en la curvatura de las líneas de sus automóviles
+
+2.3.2. B-spline.
+-
+Es una función spline que tiene el mínimo soporte con respecto a un determinado grado, suavidad y partición del dominio. 
+
+Un teorema fundamental establece que cada función spline de un determinado grado, suavidad y partición del dominio, se puede representar como una combinación lineal de B-splines del mismo grado y suavidad, y sobre la misma partición.  
+
+El término B-spline fue acuñado por Isaac Jacob Schoenberg y es la abreviatura de spline básica.
+
+2.4 Fractales
+-
+Un fractal es una figura geométrica que presenta autosimilitud, es decir, se repite a diferentes escalas.
+
+
+Características
+- Estructura infinita
+- Generación iterativa
+- Alta complejidad
+
+2.5. Uso y creación de fuentes de texto.
+-
+
+También llamada tipografía, es una definición de los distintos caracteres que se pueden usar en un documento; de este modo, las distintas fuentes presentarán las letras con un dibujo o tipo de letra diferente.
+
+- TIPOGRAFÍA DIGITAL:
+
+Los archivos de tipografía son independientes de las aplicaciones que los usan, que normalmente se instalan en un determinado directorio del sistema operativo para que estén disponibles en todos los programas que los necesiten. 
+Los mas comunes son:  
+
+- TTF (TrueType Font): Es un formato estándar de tipos de letra escalables desarrollado inicialmente por Apple Computer a finales de la década de los ochenta para competir comercialmente con el formato "Type 1" de Adobe Systems, el cual estaba basado en el lenguaje de descripción de página conocido como PostScript.
+
+- PostScript Type 1 : Es un lenguaje de descripción de páginas (en ingles: Page Description Language, PDL), utilizado en muchas impresoras y, de manera usual, como formato de transporte de archivos gráficos en talleres de impresión profesional.  
+
+- OTF (OpenType Font): Es un formato de tipos de letra escalables para computadora; su arquitectura esta basada en la de su antecesor (True Type), cuya estructura básica conserva y la cual complementa con tablas de datos que permiten incorporar a un tipo o familia tipográfica funciones tipográficasylingüisticas avanzadas.  
