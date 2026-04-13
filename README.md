@@ -752,6 +752,15 @@ Un teorema fundamental establece que cada función spline de un determinado grad
 
 El término B-spline fue acuñado por Isaac Jacob Schoenberg y es la abreviatura de spline básica.
 
+Ejercicio practico
+-
+
+En el siguiente apartado se presenta la animación de un personaje 2D (dragón) realizada en Blender mediante el uso de Grease Pencil y un sistema de rig. Durante este proceso, el movimiento del personaje se genera de forma suave y continua, especialmente en el cuerpo y la cola.
+
+Este tipo de comportamiento se relaciona con el concepto de las curvas B-spline, las cuales permiten representar trayectorias suaves a partir de varios puntos de control. De manera similar, en la animación, los huesos del personaje actúan como dichos puntos, influyendo en la forma y deformación del cuerpo, logrando movimientos más naturales.
+
+link del ejercicio: https://github.com/24680221/animacion_2d/tree/main
+
 2.4 Fractales
 -
 Un fractal es una figura geométrica que presenta autosimilitud, es decir, se repite a diferentes escalas.
@@ -777,3 +786,14 @@ Los mas comunes son:
 - PostScript Type 1 : Es un lenguaje de descripción de páginas (en ingles: Page Description Language, PDL), utilizado en muchas impresoras y, de manera usual, como formato de transporte de archivos gráficos en talleres de impresión profesional.  
 
 - OTF (OpenType Font): Es un formato de tipos de letra escalables para computadora; su arquitectura esta basada en la de su antecesor (True Type), cuya estructura básica conserva y la cual complementa con tablas de datos que permiten incorporar a un tipo o familia tipográfica funciones tipográficasylingüisticas avanzadas.  
+
+Bibliografias
+-
+
+2.1. Transformaciones bidimensionales. (2012, 21 septiembre). https://fernandez-torres-jose.blogspot.com/2012/09/21-transformaciones-bidimensionales.html 
+
+Martin, J. A. C. (s. f.). Trazo de líneas curvas. https://graficacion-jakiealexander-chanmartin.blogspot.com/2019/10/trazo-de-lineas-curvas.html Prezi, A. M. O. (s. f.). 2.2 representacion matricial de transformacion bidimencional. 
+
+prezi.com. https://prezi.com/qvfu88rnk5hm/22-representacion-matricial-de-transformacion-bidimencional/ 
+
+Prezi, W. M. O. (s. f.). USO y CREACIÓN DE FUENTES DE TEXTO. prezi.com. https://prezi.com/6oca2utp70b5/uso-y-creacion-de-fuentes-de-texto/
